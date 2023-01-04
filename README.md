@@ -1,2 +1,2 @@
-# 01 Temperature Converter
+# 01 - Temperature Converter
 This program will convert temperatures from Celsius to Fahrenheit.
