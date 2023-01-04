@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 01 Temperature Converter
+This program will convert temperatures from Celsius to Fahrenheit.
