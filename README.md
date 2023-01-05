@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 01 - Conditional Example
+This program shows an example of different conditionals.
