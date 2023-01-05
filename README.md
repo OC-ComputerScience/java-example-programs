@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 09 - Inheritance
+This program shows how to use inheritance in Java.
