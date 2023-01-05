@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 07 - Click GUI
+This program shows how to get input from a mouse with a GUI.
