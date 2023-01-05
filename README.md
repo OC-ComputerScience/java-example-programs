@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 10 - Abstract Classes
+This program shows how to use abstract classes in Java.
