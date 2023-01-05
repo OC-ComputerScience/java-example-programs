@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 11 - Interface
+This program shows how to use interfaces in Java.
