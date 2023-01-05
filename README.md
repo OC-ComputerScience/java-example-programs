@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 05 - Crazy Random
+This program will generate random numbers within a given range.
