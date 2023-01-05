@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 04 - Loop Example
+This program shows how different looping works.
