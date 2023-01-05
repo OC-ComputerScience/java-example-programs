@@ -1,2 +1,2 @@
-# oop-example-programs
-This repo holds 17 example Java programs.
+# 02 -String Mutation
+This program will mutate a string in different ways.
