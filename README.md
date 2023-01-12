@@ -1,2 +1,2 @@
-# 09 - Inheritance
+# 10 - Inheritance
 This program shows how to use inheritance in Java.
