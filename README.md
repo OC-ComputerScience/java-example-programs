@@ -1,2 +1,2 @@
-# 05 - Crazy Random
+# 06 - Crazy Random
 This program will generate random numbers within a given range.
