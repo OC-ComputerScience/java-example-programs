@@ -9,6 +9,6 @@ public class ExampleFrame extends JFrame {
 	public ExampleFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Counter");
-		getContentPane().add(new ExamplePanel());		
+		getContentPane().add(new ExamplePanel());
 	}
 }

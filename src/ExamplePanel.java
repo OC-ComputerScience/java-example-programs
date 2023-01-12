@@ -13,27 +13,29 @@ public class ExamplePanel extends JPanel {
 	private JButton push;
 	private JLabel label;
 	private int count;
-	
+
 	/**
 	 * Create the panel.
 	 */
 	public ExamplePanel() {
-		
+
 		count = 0;
 		push = new JButton("Push Once!");
 		push.addActionListener(new CountButtonListener());
 		this.add(push);
-		
-		label = new JLabel ("Count : " + count);
+
+		label = new JLabel("Count : " + count);
 		this.add(label);
-		
+
 		setBackground(Color.CYAN);
-		setPreferredSize(new Dimension(300,100));
-		
+		setPreferredSize(new Dimension(300, 100));
+
 	}
+
 	// Declare as an inner class so we can access the private class variables
-	private class CountButtonListener  implements ActionListener {
-		
+	private class CountButtonListener implements ActionListener {
+
+		@Override
 		public void actionPerformed(ActionEvent event) {
 			count += 2;
 			label.setText("Count: " + count);
