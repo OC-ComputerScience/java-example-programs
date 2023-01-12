@@ -1,2 +1,2 @@
-# 06 - Array Test
+# 07 - Array Test
 This program tests different types of arrays.
