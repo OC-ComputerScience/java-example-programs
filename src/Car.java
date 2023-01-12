@@ -1,12 +1,8 @@
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-/**
- * 
- * @author david.north
- *
- */
-public class Car {
+public class Car implements Comparable<Car> {
 
 	// instance variables
 	private String serialNumber;
@@ -18,6 +14,7 @@ public class Car {
 	private int speed;
 	private char gear;
 	private LocalDate datePurchased;
+	private int price;
 
 	// default constructor
 	public Car() {
@@ -26,16 +23,8 @@ public class Car {
 		this.speed = 0;
 	}
 
-	/**
-	 * 
-	 * @param serialNumber
-	 * @param make
-	 * @param model
-	 * @param year
-	 * @param color
-	 * @param date
-	 */
-	public Car(String serialNumber, String make, String model, int year, String color, String date) {
+	// constructor
+	public Car(String serialNumber, String make, String model, int year, String color, String date, int price) {
 		this();
 		this.serialNumber = serialNumber;
 		this.make = make;
@@ -43,6 +32,7 @@ public class Car {
 		this.year = year;
 		this.color = color;
 		this.setDatePurchased(LocalDate.parse(date, DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+		this.price = price;
 	}
 
 	// getters and setters
@@ -118,6 +108,14 @@ public class Car {
 		this.datePurchased = datePurchased;
 	}
 
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
 	public int timeToTravel(int miles) {
 		return miles / getSpeed();
 	}
@@ -135,8 +133,21 @@ public class Car {
 	}
 
 	@Override
+	public int compareTo(Car car) {
+
+		if (getPrice() < car.getPrice()) {
+			return -1;
+		} else if (getPrice() > car.getPrice()) {
+			return 1;
+		} else {
+			return 0;
+		}
+
+	}
+
+	@Override
 	public String toString() {
-		return year + " " + make + " " + model + " " + serialNumber + " " + " Purchased:" + datePurchased;
+		return year + " " + make + " " + model + "Price: " + price + " Purchased:" + datePurchased;
 	}
 
 }
