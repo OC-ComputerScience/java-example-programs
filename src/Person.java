@@ -1,37 +1,30 @@
-public class Person
-{
+public class Person {
 
 	private String name;
 	private String address;
 	private String email;
 
-	public String getName()
-	{
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(String name)
-	{
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getAddress()
-	{
+	public String getAddress() {
 		return this.address;
 	}
 
-	public void setAddress(String address)
-	{
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getEmail()
-	{
+	public String getEmail() {
 		return this.email;
 	}
 
-	public void setEmail(String email)
-	{
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
@@ -41,16 +34,15 @@ public class Person
 	 * @param address
 	 * @param email
 	 */
-	public Person(String name, String address, String email)
-	{
+	public Person(String name, String address, String email) {
 		this.name = name;
 		this.address = address;
 		this.email = email;
 	}
 
-	public String toString()
-	{
-		return getName()+" "+getAddress();
+	@Override
+	public String toString() {
+		return getName() + " " + getAddress();
 	}
 
 }

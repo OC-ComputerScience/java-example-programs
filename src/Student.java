@@ -1,53 +1,43 @@
-public class Student extends Person
-{
+public class Student extends Person {
 
 	private String major;
 	private String[] courses;
 	private char[] grades;
 	private int numberCourses;
 
-	 /**
-   * 
-   * @param name
-   * @param address
-   * @param email
-   */
-  public Student(String name, String address, String email)
-  {
-	  super(name,address,email);
-	/*    
-	    setName(name); 
-	    setAddress(address);
-	    setEmail(email);
-	*/
-	  numberCourses = 0;
-	  courses = new String[50];
-	  grades = new char[50];
+	/**
+	 * 
+	 * @param name
+	 * @param address
+	 * @param email
+	 */
+	public Student(String name, String address, String email) {
+		super(name, address, email);
+		/*
+		 * setName(name); setAddress(address); setEmail(email);
+		 */
+		numberCourses = 0;
+		courses = new String[50];
+		grades = new char[50];
 	}
-	  
-	public int getNumberCourses()
-	{
-	  return numberCourses;
+
+	public int getNumberCourses() {
+		return numberCourses;
 	}
-  
-	public String getMajor()
-	{
+
+	public String getMajor() {
 		return this.major;
 	}
 
-	public void setMajor(String major)
-	{
+	public void setMajor(String major) {
 		this.major = major;
 	}
 
-	public String[] getCourses()
-	{
+	public String[] getCourses() {
 		return this.courses;
 	}
 
-
-	public char[] getGrades()
-	{
+	public char[] getGrades() {
 		return this.grades;
 	}
 
@@ -56,41 +46,36 @@ public class Student extends Person
 	 * @param course
 	 * @param grade
 	 */
-	public void addCourse(String course, char grade)
-	{
+	public void addCourse(String course, char grade) {
 		courses[numberCourses] = course;
 		grades[numberCourses] = grade;
 		numberCourses++;
 	}
 
-	public double calcGPA()
-	{
-	  double total = 0.0;
-		for (char grade : getGrades())
-		{
-		  switch(grade) {
-		  case 'A' :
-		    total += 4;
-		    break;
-		  case 'B' :
-		    total += 3;
-		    break;
-		  case 'C' :
-	        total += 2;
-	        break;
-		  case 'D' :
-	        total += 1;
-	        break;
-		  }
+	public double calcGPA() {
+		double total = 0.0;
+		for (char grade : getGrades()) {
+			switch (grade) {
+			case 'A':
+				total += 4;
+				break;
+			case 'B':
+				total += 3;
+				break;
+			case 'C':
+				total += 2;
+				break;
+			case 'D':
+				total += 1;
+				break;
+			}
 		}
-	   return total/getNumberCourses();
+		return total / getNumberCourses();
 	}
-	
 
-
-	public String toString()
-	{
-		return "Student: "+super.toString();
+	@Override
+	public String toString() {
+		return "Student: " + super.toString();
 	}
 
 }
