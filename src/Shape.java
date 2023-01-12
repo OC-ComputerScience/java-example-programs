@@ -1,23 +1,20 @@
-public abstract class Shape
-{
+public abstract class Shape {
 
 	private String color;
 
-	public String getColor()
-	{
+	public String getColor() {
 		return this.color;
 	}
 
-	public void setColor(String color)
-	{
+	public void setColor(String color) {
 		this.color = color;
 	}
 
 	public abstract double getArea();
 
-	public String toString()
-	{
-		return "Shape: "+getColor();
+	@Override
+	public String toString() {
+		return "Shape: " + getColor();
 	}
 
 }

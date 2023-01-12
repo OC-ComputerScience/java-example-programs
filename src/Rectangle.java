@@ -1,39 +1,37 @@
-public class Rectangle extends Shape
-{
+public class Rectangle extends Shape {
 
 	private int length;
 	private int width;
 
-	public Rectangle(int lenght, int width)
-	{
-	  this.length = lenght;
-	  this.width = width;
+	public Rectangle(int lenght, int width) {
+		this.length = lenght;
+		this.width = width;
 	}
 
-	public double getArea()
-	{
+	@Override
+	public double getArea() {
 		return getLength() * getWidth();
 	}
 
-	public String toString()
-	{
-		return super.toString()+" Rectangle: "+getLength()+" by "+getWidth();
+	@Override
+	public String toString() {
+		return super.toString() + " Rectangle: " + getLength() + " by " + getWidth();
 	}
 
-  public int getLength() {
-    return length;
-  }
+	public int getLength() {
+		return length;
+	}
 
-  public void setLength(int length) {
-    this.length = length;
-  }
+	public void setLength(int length) {
+		this.length = length;
+	}
 
-  public int getWidth() {
-    return width;
-  }
+	public int getWidth() {
+		return width;
+	}
 
-  public void setWidth(int width) {
-    this.width = width;
-  }
+	public void setWidth(int width) {
+		this.width = width;
+	}
 
 }

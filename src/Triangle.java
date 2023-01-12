@@ -1,42 +1,37 @@
-public class Triangle extends Shape
-{
+public class Triangle extends Shape {
 
 	private int base;
 	private int height;
 
-	public Triangle(int base, int height)
-	{
-	  this.base = base;
-	  this.height = height;
-	}
-	
-	public double getArea()
-	{
-		return .5*getBase()*getHeight();
+	public Triangle(int base, int height) {
+		this.base = base;
+		this.height = height;
 	}
 
-	
-	public String toString()
-	{
-		return super.toString()+" Triangle: "+getHeight()+" height with base "+getBase();
+	@Override
+	public double getArea() {
+		return .5 * getBase() * getHeight();
 	}
 
-  public int getBase() {
-    return base;
-  }
+	@Override
+	public String toString() {
+		return super.toString() + " Triangle: " + getHeight() + " height with base " + getBase();
+	}
 
-  public void setBase(int base) {
-    this.base = base;
-  }
+	public int getBase() {
+		return base;
+	}
 
-  public int getHeight() {
-    return height;
-  }
+	public void setBase(int base) {
+		this.base = base;
+	}
 
-  public void setHeight(int height) {
-    this.height = height;
-  }
+	public int getHeight() {
+		return height;
+	}
 
-  
+	public void setHeight(int height) {
+		this.height = height;
+	}
 
 }
