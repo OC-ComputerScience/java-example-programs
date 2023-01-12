@@ -1,15 +1,16 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.TreeMap;
 
 public class Dealer {
 
 	private String name;
 	private String address;
-	private ArrayList<Car> cars;
+	private TreeMap<String, Car> cars;
 
 	public Dealer() {
-		cars = new ArrayList<Car>();
+		cars = new TreeMap<String, Car>();
 	}
 
 	public Dealer(String name, String address) {
@@ -34,16 +35,16 @@ public class Dealer {
 		this.address = address;
 	}
 
-	public ArrayList<Car> getCars() {
+	public TreeMap<String, Car> getCars() {
 		return cars;
 	}
 
 	public void addCar(Car car) {
-		cars.add(car);
+		cars.put(car.getSerialNumber(), car);
 	}
 
 	public void removeCar(Car car) {
-		cars.remove(car);
+		cars.remove(car.getSerialNumber());
 	}
 
 	public int getCarCount() {
@@ -52,13 +53,18 @@ public class Dealer {
 
 	public ArrayList<Car> oldInventory(String date) {
 		ArrayList<Car> oldList = new ArrayList<Car>();
-		LocalDate oldDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy"));
-		for (Car car : getCars()) {
+		LocalDate oldDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+		for (Car car : getCars().values()) {
 			if (car.getDatePurchased().isBefore(oldDate)) {
 				oldList.add(car);
 			}
+
 		}
 		return oldList;
+	}
+
+	public Car getCarForID(String serialNumber) {
+		return getCars().get(serialNumber);
 	}
 
 	@Override

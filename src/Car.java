@@ -1,6 +1,11 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * 
+ * @author david.north
+ *
+ */
 public class Car {
 
 	// instance variables
@@ -21,7 +26,15 @@ public class Car {
 		this.speed = 0;
 	}
 
-	// constructor
+	/**
+	 * 
+	 * @param serialNumber
+	 * @param make
+	 * @param model
+	 * @param year
+	 * @param color
+	 * @param date
+	 */
 	public Car(String serialNumber, String make, String model, int year, String color, String date) {
 		this();
 		this.serialNumber = serialNumber;
@@ -29,7 +42,7 @@ public class Car {
 		this.model = model;
 		this.year = year;
 		this.color = color;
-		this.setDatePurchased(LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy")));
+		this.setDatePurchased(LocalDate.parse(date, DateTimeFormatter.ofPattern("MM/dd/yyyy")));
 	}
 
 	// getters and setters
@@ -123,7 +136,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return year + " " + make + " " + model + " Purchased:" + datePurchased;
+		return year + " " + make + " " + model + " " + serialNumber + " " + " Purchased:" + datePurchased;
 	}
 
 }
