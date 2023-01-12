@@ -1,2 +1,2 @@
 # 14 - ArrayList Car Dealer
-This program shows how to use different numbers in Java.
+This program mimics a Car Dealership using an ArrayList to keep track of the Car objects.
