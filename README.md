@@ -2,8 +2,11 @@
 
 ### This repo contains 17 different example programs written in Java and demoed in Object Oriented Programming.
 
-If you want to try to run these projects to learn more about how these practices work, download the ZIP file for a branch you want to try and copy the contents of the **src** folder into the contents of the src folder of a new Java project you have added to your Eclipse workspace. <br/>
-Each branch will emphasize the purpose of the example shown.
+- If you want to try to run these projects to learn more about how these practices work, download the ZIP file for a branch you want to try.
+    - Under the blue **Code** button.
+    - Select **Download ZIP**.
+- From the downloaded ZIP file, copy the contents of the **src** folder into the contents of the src folder of a new Java project you have added to your Eclipse workspace.
+- Each branch will emphasize the purpose of the example shown.
 
 1. ### Temperature Converter
     - This program will convert temperatures from Celsius to Fahrenheit.
