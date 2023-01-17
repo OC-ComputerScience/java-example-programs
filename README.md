@@ -2,7 +2,7 @@
 
 ### This repo contains 17 different example programs written in Java and demoed in Object Oriented Programming.
 
-Download or clone the source code of the examples and try running them on your local machine to learn more about how these practices work. <br/>
+If you want to try to run these projects to learn more about how these practices work, download the ZIP file for a branch you want to try and copy the contents of the **src** folder into the contents of the src folder of a new Java project you have added to your Eclipse workspace. <br/>
 Each branch will emphasize the purpose of the example shown.
 
 1. ### Temperature Converter
